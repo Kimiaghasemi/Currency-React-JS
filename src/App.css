@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 .app {
     background-image: url('./assets/YellowBG.jpg');
     background-size: cover;
     background-position: bottom;
     display: grid;
     transition: 0.4 ease-out;
+    text-align: center;
   }
 
 .app_body{
@@ -13,10 +13,6 @@
   padding: 25px;
   text-align: center;
   }
-=======
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -52,4 +48,3 @@
     transform: rotate(360deg);
   }
 }
->>>>>>> c97caf1dd497f0aa903fb10b0c7fda5ad691a9c2
