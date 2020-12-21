@@ -1,0 +1,12 @@
+.show_box{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(75, 59, 59, 0.199);
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 25px;
+    color: #FFF;
+  }
