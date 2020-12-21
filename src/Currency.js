@@ -3,79 +3,34 @@ import './Currency.css'
 
 function Currency() {
     const [currency , setCurrency] = useState([])
-    const api = "https://currency.jafari.li/json"
+    const [isLoading,setIsLoading] = useState(true)
 
+    const api = "https://gist.githubusercontent.com/ahmadpanah/e6225b11235a04397b813d0de6e6f5ad/raw/ab559a1146b5e6f2d57bd546c20c090842d5fcc6/sana.json"
+    
     useEffect(() =>{
     fetch(`${api}`)
        .then(res => res.json())
        .then((result) =>{
          setCurrency(result);
+         setIsLoading(false)
         console.log(result);})
       }
      , [])
+     
     return (
         <div>
             <div>
                  <p>نرخ لحظه‌ای ارز و طلا</p>
             </div>
-        {(typeof currency.Currency != "undefined") ? (
+        { isLoading ?(''): (
             <div>
                 <div className="show_box"  >
-                     {currency.LastModified } , 
-                     {currency.Currency[0].Code}
+                     {currency.sana.data[0].p }
                 </div>
             </div>
-        ): ('')}
+        ) }
         </div>
     )
 }
 
 export default Currency
-
-/*
-function App() {
-
-  return (
-    <div className="App">
-      
-     <main>
-       <div className="header">:نرخ ارزها</div>
-        <tbody>
-          <tr>
-          <tr><td className="green">دلار</td></tr> 
-          <tr><td className="red">یورو</td></tr>
-          <tr><td className="green">پوند انگلیس</td></tr>
-            <tr>
-                
-                <td className="red">درهم امارات</td>
-            </tr> 
-            <tr>
-                <td className="green">لیر ترکیه</td>
-            </tr> 
-          <tr><td className="red">یوان چین</td></tr> 
-          <tr><td className="green">ین ژاپن</td></tr> 
-          <tr><td className="red">دلار کانادا</td></tr> 
-          <tr><td className="green">دلار استرالیا</td></tr> 
-          <tr><td className="red">دلار نیوزلند</td></tr> 
-          <tr><td className="green">فرانک سوئیس</td></tr> 
-          <tr><td className="red">کرون سوئد</td></tr> 
-          <tr><td className="green">روبل روسیه</td></tr> 
-          <tr><td className="red">منات آذربایجان</td></tr> 
-          <tr><td className="green">درام ارمنستان</td></tr> 
-          <tr><td className="red">افغانی افغانستان</td></tr>
-         </tr>
-        </tbody>
-       
-        <tr>
-          <div className="footer">
-            <td >آخرین به روز رسانی </td>
-            <AutorenewIcon ></AutorenewIcon>
-          </div>
-        </tr>
-      </main>
-   </div>
-    
-  );
-
-}
-*/
