@@ -14,10 +14,6 @@
   text-align: center;
   }
 
-.Show{
-    font-size: 72px;
-    color :ivory;
-  }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -52,3 +48,4 @@
     transform: rotate(360deg);
   }
 }
+
