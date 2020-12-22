@@ -1,34 +1,35 @@
-*{
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .header{
   text-align: right;
   background-color: rgb(48, 48, 48);
   color: antiquewhite;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px ;
-
+  border-top-left-radius: 1cm;
+  border-top-right-radius: 1cm;
+  
 }
 .type{
   text-align: right;
   flex: 1 1 auto;
   padding-right: 8px;
-  padding-top: 20px;
+  padding-top: 8px;
   color: aliceblue;
   size: 8px;
   
 }
 img{
-  padding-top: 18px;
+  padding-top: 10px;
+  height: 30px;
+  width: 30px;
 }
 .cost {
   display: flex;
   flex-direction: row-reverse;
   text-align: left;
-  padding-top: 20px;
+  padding-top: 8px;
   color: rgb(145, 145, 145);
 }
 .arz{
@@ -53,17 +54,20 @@ img{
  }
  .arz:nth-child(odd){
   border-color: rgb(48, 48, 48) rgb(48, 48, 48) rgb(48, 48, 48) rgb(77, 177, 81);
-  
  }
+ .arz:hover{
+  background: #5a5a5a!important;
+}
 .money{
   color: aliceblue;
   background-color: #383836;
 } 
-img{
-  height: 30px;
-  width: 30px;
-}
 .cost-s{
   color:rgb(189, 143, 6);
-  padding-right: 2px;
+  padding-right: 10px;
+}
+.pos{
+  padding-right: 0px;
+  text-align: right;
+  -ms-flex-item-align: start;
 }

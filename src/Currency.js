@@ -1,6 +1,8 @@
 import React , { useEffect , useState } from 'react'
 import './Currency.css'
 
+
+
 function Currency() {
     const [currency , setCurrency] = useState([])
     const [isLoading,setIsLoading] = useState(true)
@@ -24,11 +26,11 @@ function Currency() {
             <div className="header">:نرخ ارزها</div>
             <div className="money">
              <div className="arz" >
-               <div><img alt="US" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"/></div>
+               <div><img alt="US" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/255px-Flag_of_the_United_States_%28Pantone%29.svg.png"/></div>
                <div className="type">دلار آمریکا</div>
                  <div>
                    <div className="cost">
-                   <div>:قیمت</div>
+                   <div classname="pos">:قیمت</div>
                    <div className="cost-s">{currency.sana.data[0].p}</div>
                    </div>
                  </div>
@@ -38,23 +40,23 @@ function Currency() {
                 <div className="type">یورو</div>
                  <div>
                    <div className="cost">
-                   <div>:قیمت</div>
+                   <div classname="pos">:قیمت</div>
                    <div className="cost-s">{currency.sana.data[1].p}</div>
                    </div>
                  </div>
                 </div>
                  <div className="arz">
-                 <div><img alt="AE" src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/AE.svg"/></div>
+                 <div><img alt="AE" src="https://parseflag.com/images/flag/UNITED%20ARAB%20EMIRATES.JPG"/></div>
                  <div className="type">درهم امارات</div>
                  <div>
                    <div className="cost">
-                   <div>:قیمت</div>
+                   <div classname="pos">:قیمت</div>
                    <div className="cost-s">{currency.sana.data[2].p}</div>
                    </div>
                  </div>
                  </div>
                  <div className="arz">
-                <div><img alt="IN" src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/IN.svg"/></div>
+                <div><img alt="IN" src="https://parseflag.com/images/flag/INDIA.JPG"/></div>
                  <div className="type">روپیه هند</div>
                  <div>
                    <div className="cost">
@@ -64,7 +66,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="TR" src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/TR.svg"/></div>
+                 <div><img alt="TR" src="https://parseflag.com/images/flag/TURKEY.JPG"/></div>
                  <div className="type">لیر ترکیه</div>
                  <div>
                    <div className="cost">
@@ -74,7 +76,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="RY" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/RU.svg"/></div>
+                 <div><img alt="RY" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png"/></div>
                  <div className="type">روبل روسیه</div>
                  <div>
                    <div className="cost">
@@ -84,7 +86,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="CN " src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/CN.svg"/></div>
+                 <div><img alt="CN " src="https://parseflag.com/images/flag/CHINA.JPG"/></div>
                  <div className="type">یوان چین</div>
                  <div>
                    <div className="cost">
@@ -94,7 +96,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="KR" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/KR.svg"/></div>
+                 <div><img alt="KR" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/255px-Flag_of_South_Korea.svg.png"/></div>
                  <div className="type">وون کره جنوبی</div>
                  <div>
                    <div className="cost">
@@ -104,7 +106,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="CH" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/CH.svg"/></div>
+                 <div><img alt="CH" src="https://parseflag.com/images/flag/AWITZERLAND.JPG"/></div>
                  <div className="type">فرانک سوئیس</div>
                  <div>
                    <div className="cost">
@@ -114,7 +116,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="JP" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/JP.svg"/></div>
+                 <div><img alt="JP" src="https://parseflag.com/images/flag/JAPAN.JPG"/></div>
                  <div className="type">ین ژاپن</div>
                  <div>
                    <div className="cost">
@@ -124,7 +126,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="CA" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/CA.svg"/></div>
+                 <div><img alt="CA" src="https://parseflag.com/images/flag/CANADA.JPG"/></div>
                  <div className="type">دلار کانادا</div>
                  <div>
                    <div className="cost">
@@ -134,7 +136,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                <div><img alt="GB" src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"/></div>
+                <div><img alt="GB" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/255px-Flag_of_the_United_Kingdom.svg.png"/></div>
                  <div className="type">پوند انگلیس</div>
                  <div>
                    <div className="cost">
@@ -144,7 +146,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="SE" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/SE.svg"/></div>
+                 <div><img alt="SE" src="https://parseflag.com/images/flag/SWEDEN.JPG"/></div>
                  <div className="type">کرون سوئد</div>
                  <div>
                    <div className="cost">
@@ -154,7 +156,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="NO" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/NO.svg"/></div>
+                 <div><img alt="NO" src="https://parseflag.com/images/flag/NEPAL.JPG"/></div>
                  <div className="type">کرون نروژ</div>
                  <div>
                    <div className="cost">
@@ -164,7 +166,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="IQ" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/IQ.svg"/></div>
+                 <div><img alt="IQ" src="https://parseflag.com/images/flag/IRAQ.JPG"/></div>
                  <div className="type">دینار عراق</div>
                  <div>
                    <div className="cost">
@@ -174,7 +176,7 @@ function Currency() {
                  </div>
                  </div>
                  <div className="arz">
-                 <div><img alt="AU" src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/AU.svg"/></div>
+                 <div><img alt="AU" src="https://parseflag.com/images/flag/AUSTRALIA.JPG"/></div>
                  <div className="type">دلار استرالیا</div>
                  <div>
                    <div className="cost">

@@ -1,6 +1,6 @@
 import React from 'react'
 import LoopIcon from '@material-ui/icons/Loop'
-import './Currency.css'
+import './Footer.css'
 import { IconButton } from '@material-ui/core'
 
 function Footer() {
